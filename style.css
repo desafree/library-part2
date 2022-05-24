@@ -16,6 +16,88 @@ main {
   padding: clamp(15px, 50px, 100px);
   min-height: 100vh;
   background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.add {
+  padding: 20px 50px;
+  border: 2px solid white;
+  font-size: 19px;
+  font-weight: 600;
+  background-color: #333333;
+  border-radius: 20px;
+  color: white;
+}
+
+.add-book-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.363);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.add-book-form form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 70px 50px;
+  border-radius: 20px;
+}
+
+form label {
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  border: 2px solid #333333;
+  border-radius: 20px;
+}
+
+form div {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+form div label {
+  margin: 0;
+}
+
+form div input {
+  margin: 0;
+  width: 30px;
+}
+
+form button {
+  padding: 10px;
+  font-size: 19px;
+  font-weight: 600;
+  border: none;
+  background-color: orange;
+  border-radius: 20px;
+  color: white;
+}
+
+form button.close-btn {
+  background-color: #333333;
+  margin-top: 20px;
 }
 
 .books-container {
@@ -30,31 +112,5 @@ main {
   background-color: white;
   border-radius: 20px;
   border: 2px solid #333333;
-}
-.book-container .title-container {
-}
-.book-container .title-container h3 {
-}
-.book-container .title-container p {
-}
-
-.book-container .author-container {
-}
-.book-container .author-container h3 {
-}
-.book-container .author-container p {
-}
-
-.book-container .pages-container {
-}
-.book-container .pages-container h3 {
-}
-.book-container .pages-container p {
-}
-
-.book-container .read-container {
-}
-.book-container .read-container h3 {
-}
-.book-container .read-container input {
+  min-width: 300px;
 }

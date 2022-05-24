@@ -11,7 +11,7 @@
   <body>
     <main>
       <div class="books-container">
-        <div class="book-container">
+        <!-- <div class="book-container">
           <div class="title-container">
             <h3>Title:</h3>
             <p>"Titolo prova"</p>
@@ -30,7 +30,29 @@
           </div>
 
           <button>DELETE</button>
-        </div>
+        </div> -->
+      </div>
+      <button class="add">ADD BOOK</button>
+
+      <div class="add-book-form">
+        <form action="#">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" />
+
+          <label for="author">Author:</label>
+          <input type="author" id="author" name="author" />
+
+          <label for="pages">Pages:</label>
+          <input type="number" id="pages" name="pages" />
+
+          <div>
+            <label for="read">Read</label>
+            <input type="checkbox" checked id="checked" name="checked" />
+          </div>
+
+          <button class="add-btn">ADD BOOK</button>
+          <button class="close-btn" type="button">CLOSE</button>
+        </form>
       </div>
     </main>
   </body>

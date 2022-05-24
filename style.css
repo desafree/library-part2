@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 27px;
+  color: #333333;
+}
+
+main {
+  padding: clamp(15px, 50px, 100px);
+  min-height: 100vh;
+  background-color: orange;
+}
+
+.books-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.book-container {
+  padding: 50px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #333333;
+}
+.book-container .title-container {
+}
+.book-container .title-container h3 {
+}
+.book-container .title-container p {
+}
+
+.book-container .author-container {
+}
+.book-container .author-container h3 {
+}
+.book-container .author-container p {
+}
+
+.book-container .pages-container {
+}
+.book-container .pages-container h3 {
+}
+.book-container .pages-container p {
+}
+
+.book-container .read-container {
+}
+.book-container .read-container h3 {
+}
+.book-container .read-container input {
+}
